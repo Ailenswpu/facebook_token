@@ -1,7 +1,8 @@
 require "facebook_token/version"
+require "mechanize"
 
 module FacebookToken
-  class FBToken
+  class Dev
     def self.fetch(email = nil, password = nil, app_id = nil)
       agent = Mechanize.new
       agent.follow_meta_refresh = true
